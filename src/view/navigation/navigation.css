@@ -1,0 +1,30 @@
+.navigation{
+    width: 100%;
+}
+.navigation-head-one{
+    width: 1200px;
+    padding: 30px 0;
+}
+.navigation-inputBut-view .ant-btn-primary{
+    background: #009FA8;
+    border-color: #009FA8;
+}
+
+.navigation-inputBut-view .ant-input:hover,.navigation-inputBut-view .ant-input,.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled){
+    border-color: #009FA8;
+}
+
+.navigation-contactWay{
+    color: #009FA8;
+    font-size:18px;
+    font-family:Microsoft YaHei;
+    font-weight:bold;
+    line-height: inherit;
+}
+.navigation-contactWay>p{
+    margin-bottom: 0;
+
+}
+.navigation-head-one .ant-input-affix-wrapper .ant-input-prefix{
+    left: 8px;
+}

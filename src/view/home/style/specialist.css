@@ -1,0 +1,142 @@
+.specialist {
+    width: 100%;
+    padding: 30px 0;
+    position: relative;
+}
+
+.specialist-container {
+    width: 1200px;
+    margin: auto;
+}
+
+.specialist-slide-div {
+    width: 100%;
+    position: relative;
+}
+
+.specialist-slide-div:hover {
+    cursor: pointer;
+}
+
+.doctor-details {
+    width: 100%;
+    height: 0;
+    padding: 0 20px;
+    background: rgba(0, 159, 168, 0.8);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    transition: height 0.8s;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.doctor-details > div {
+    margin-bottom: 20px;
+}
+
+.doctor-details > p {
+    text-align: center;
+}
+
+.specialist-slide-div:hover > .doctor-details {
+    height: 100%;
+}
+
+.specialist-slide-div:hover > .doctor-name {
+    height: 0;
+    padding: 0;
+}
+
+.specialist-slide-div > img {
+    width: 100%;
+}
+
+.doctor-name {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.8s;
+    overflow: hidden;
+}
+
+.doctor-name > span:last-child {
+    max-width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.specialist-pagination {
+    width: 100%;
+}
+
+.specialist-pagination-view {
+    width: 1200px;
+    position: relative;
+    display: none;
+}
+
+.specialist-pagination .swiper-pagination-bullet {
+    margin: 0 3px;
+}
+
+.specialist-button-next {
+    right: 10%;
+    outline: none;
+    color: rgba(0, 159, 168, 0.5);
+}
+
+.specialist-button-prev {
+    left: 10%;
+    outline: none;
+    color: rgba(0, 159, 168, 0.5);
+}
+
+.specialist-pagination-view .swiper-pagination-bullet-active {
+    background: #009FA8;
+}
+@media screen and (max-width: 1750px) {
+    .specialist-button-prev {
+        left: 7%;
+    }
+
+    .specialist-button-next {
+        right: 7%;
+    }
+}
+@media screen and (max-width: 1650px) {
+    .specialist-button-prev {
+        left: 5%;
+    }
+
+    .specialist-button-next {
+        right: 5%;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .specialist-button-prev {
+        left: 2%;
+    }
+
+    .specialist-button-next {
+        right: 2%;
+    }
+}
+@media screen and (max-width: 1340px) {
+    .specialist-button-prev {
+        display: none;
+    }
+
+    .specialist-button-next {
+        display: none;
+    }
+    .specialist-pagination-view{
+        display: block;
+    }
+}

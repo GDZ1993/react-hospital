@@ -1,0 +1,25 @@
+.iconLabel{
+    width: 100%;
+    padding: 20px 0;
+    background: url("../../../images/bg1@2x.png");
+}
+.iconLabel-div{
+    width: 1200px;
+    flex-wrap: wrap;
+}
+.iconLabel-item{
+    width: 90px;
+    margin: 20px;
+}
+.iconLabel-item>img{
+    width: 70px;
+    margin-bottom: 10px;
+}
+.iconLabel-item>p{
+    width: 100%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0;
+    text-align: center;
+}

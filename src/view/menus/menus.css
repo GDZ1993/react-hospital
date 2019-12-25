@@ -1,0 +1,34 @@
+.menus-Menu-UL{
+    width: 100%;
+    background: #009FA8;
+    border-bottom: 1px solid #009FA8;
+}
+.ant-menu{
+    color: white;
+}
+.ant-menu-submenu-popup {
+    background:rgba(0,159,168,0.7);
+}
+.ant-menu-submenu > .ant-menu{
+    background:transparent;
+}
+.ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-submenu:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu-active, .ant-menu-horizontal > .ant-menu-item-open, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected{
+    border-bottom:none;
+    color: white;
+    background: #00767D;
+}
+.ant-menu-horizontal > .ant-menu-item, .ant-menu-horizontal > .ant-menu-submenu{
+    border-bottom:none;
+}
+.ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover{
+    color: white;
+    background:rgba(0,118,125,0.5);
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+    background:rgba(0,118,125,0.5);
+    color: white;
+}
+.ant-menu-item{
+    text-align: center;
+}

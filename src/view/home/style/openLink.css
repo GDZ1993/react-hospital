@@ -1,0 +1,36 @@
+.openLink-view{
+    width: 100%;
+}
+.openLink-div{
+    width: 1200px;
+    padding: 15px 0;
+    margin: auto;
+}
+.openLink-div > div{
+    font-size:12px;
+    font-family:Microsoft YaHei;
+    font-weight:bold;
+    color:rgba(0,159,168,1);
+
+}
+.openLink-div > div >span:first-child{
+    font-size:16px;
+}
+.openLink-a{
+    margin-left: 20px;
+    color: #777777;
+}
+.openLink-a:hover{
+    color: #009FA8;
+}
+.openLink-a:after{
+    content: " ";
+    display: block;
+    width: 1px;
+    height: 17px;
+    background: #777777;
+    margin-left: 20px;
+}
+.openLink-div> .openLink-a:last-child:after{
+    display: none;
+}
