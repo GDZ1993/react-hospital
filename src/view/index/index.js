@@ -13,7 +13,7 @@ export default class index extends Component{
                 <Navigation/>
                 <Switch>
                     <Route path="/home" component={Home}/>
-                    <Route path="/newsList" component={newsList}/>
+                    <Route path="/newsList/:data" component={newsList}/>
                     <Route path="/searchView" component={searchView}/>
                     <Route component={Home}/>
                 </Switch>

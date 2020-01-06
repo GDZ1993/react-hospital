@@ -1,21 +1,17 @@
 import React, {Component} from 'react';
-import { createHashHistory } from 'history';
 import {Menu} from 'antd'
 import './menus.css'
 import ajax from "../../util/ajax";
 const {SubMenu} = Menu;
-const history = createHashHistory();
 export default class menus extends Component {
     state = {
         current: 'mail',
         navArr: []
     };
-    homeClick = () => {
-        history.push('/home')
-    };
     handleClick = e => {
-        console.log('click ', e);
-        history.push('/newsList'+e.key)
+        console.log('click ', e.key);
+        console.log(this.props)
+       // this.props.history.push({pathname: `/Detail/${v.id}`, state: {data: v}})
     };
     componentDidMount() {
         this.requestIndex()
@@ -41,11 +37,11 @@ export default class menus extends Component {
                         if (item.twoList.length) {
                             return <SubMenu key={item.coId}  title={<span className="submenu-title-wrapper">{item.coName}</span>}>
                                 {
-                                    item.twoList.map(it => <Menu.Item onClick={this.handleClick} key={'?coId=' + item.coId+'&ctId='+ it.ctId}>{it.ctName}</Menu.Item>)
+                                    item.twoList.map(it => <Menu.Item onClick={this.handleClick} key={JSON.stringify({coId: item.coId,ctId:it.ctId})}>{it.ctName}</Menu.Item>)
                                 }
                             </SubMenu>
                         } else {
-                            return <Menu.Item onClick={this.handleClick} key={'?coId=' + item.coId}>{item.coName}</Menu.Item>
+                            return <Menu.Item onClick={this.handleClick} key={JSON.stringify({coId: item.coId})}>{item.coName}</Menu.Item>
                         }
                     })
                 }
